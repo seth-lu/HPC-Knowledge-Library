@@ -152,15 +152,15 @@ int main() {
 
 第一次：
 
-![image-20231004142916009](/typero-image/image-20231004142916009.png)
+![image-20231004142916009](./typero-image/image-20231004142916009.png)
 
 第二次：
 
-![image-20231004142936540](/typero-image/image-20231004142936540.png)
+![image-20231004142936540](./typero-image/image-20231004142936540.png)
 
 第三次：
 
-![image-20231004142955041](/typero-image/image-20231004142955041.png)
+![image-20231004142955041](./typero-image/image-20231004142955041.png)
 
 结论：==++i的效率比i++快==
 
