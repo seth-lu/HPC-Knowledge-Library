@@ -29,12 +29,14 @@ class Tensor1D : public Tensor<T>{
 
         // Return the reference at tensor[i][j][k][m]
         T& operator() (int64_t i, int64_t j, int64_t m, int64_t n) override {
-            return _tensor[i * this->batch + j * this->channel + m * this->height + n];
+            return _tensor[i * this->channel * this->height * this->width
+                        + j * this->height * this->width + m * this->width + n];
         }
 
         // Return the const reference at tensor[i][j][k][m]
         const T& operator() (int64_t i, int64_t j, int64_t m, int64_t n) const override {
-            return _tensor[i * this->batch + j * this->channel + m * this->height + n];
+            return _tensor[i * this->channel * this->height * this->width
+                        + j * this->height * this->width + m * this->width + n];
         }
 
         // Convolution A * B
