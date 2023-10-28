@@ -1,0 +1,3 @@
+D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\run_and_plot.dir/objects.a
+D:\mingw64\bin\ar.exe qc CMakeFiles\run_and_plot.dir/objects.a @CMakeFiles\run_and_plot.dir\objects1.rsp
+D:\mingw64\bin\c++.exe  -Ofast -march=native -Wl,--whole-archive CMakeFiles\run_and_plot.dir/objects.a -Wl,--no-whole-archive -o run_and_plot.exe -Wl,--out-implib,librun_and_plot.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\run_and_plot.dir\linkLibs.rsp
