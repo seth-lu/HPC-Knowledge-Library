@@ -1,0 +1,6 @@
+compile at src dir:
+g++ .\test_plot.cpp -I D:\Python\include -I D:\miniconda3\Lib\site-packages\numpy\core\include -L D:\miniconda3\libs -lpython38
+
+compile at build dir:
+cmake .. -G "MinGW Makefiles"
+mingw32-make.exe

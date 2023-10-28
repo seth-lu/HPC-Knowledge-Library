@@ -1,0 +1,7 @@
+project("week 3")
+cmake_minimum_required(VERSION 3.23)
+find_package(Python3 3.8.5 COMPONENTS Interpreter Development NumPy REQUIRED)
+include_directories({PYTHON_INCLUDE_DIRS} include)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Ofast -march=native")
+add_executable(run_and_plot src/run_and_plot.cpp)
+target_link_libraries(run_and_plot Python3::NumPy)
