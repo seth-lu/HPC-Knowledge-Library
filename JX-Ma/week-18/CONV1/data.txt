@@ -1,0 +1,92 @@
+/**
+ * CONV1-optimization
+ * input(10,3,227,227)
+ * fiter(96,3,11,11)
+ * outpuy(10,96,55,55)
+ * stride:4
+*/
+
+hoist-c-element
+/**
+ * AI flop/bytes
+ * flop: 11x11x2
+ * bytes: input 11x11x4 output 1x4 fiter 11x11x4
+*/
+AI 11x11x2/((11x11x2+1)x4) = 0.249
+gflops = 3.1003
+
+unroll1x4
+/**
+ * AI flop/bytes
+ * flop: 11x11x2
+ * bytes: input 5x11x4 fiter 5x11x4 output 1x4
+*/
+AI = 11x11x2/((5x11x2+1)x4) = 0.54 
+gflops = 9.05184
+
+unroll1x4_p
+
+/**
+ * AI flop/bytes
+ * flop: 11x11x2
+ * bytes: input 3x11x4 fiter 3x11x4 output 1x4
+*/
+AI=11x11x2/((3x11x2+1)x4)= 0.900
+gflops = 13.0265
+
+unroll 1x12_p
+/**
+ * AI flop/bytes
+ * flop: 11x11x2
+ * bytes: input 2x11x4 fiter 2x11x4 output 1x4
+*/
+AI=11x11x2/((2x11x2+1)x4)=1.34
+gflops = 25.5514
+
+unroll1x12_p_RB1x4
+/**
+ * AI flop/bytes
+ * flop: 11x11x2x4
+ * bytes: input 6x11x4 fiter 2x11x4 output 4x4
+*/
+AI = 11x11x2x4/((6x11+2x11+4)x4) = 2.63
+gflops = 37.2744
+
+unroll1x12_p_RB1x7
+/**
+ * AI flop/bytes
+ * flop: 11x11x2x7
+ * bytes: input 9x11x4 fiter 2x11x4 output 7x4
+*/
+AI = 11x11x2x7/((9x11+2x11+7)x4) = 3.30
+gflops=37.2058
+
+unroll1x12_p_RB1x8
+/**
+ * AI flop/bytes
+ * flop: 11x11x2x8
+ * bytes: input 10x11x4 fiter 2x11x4 output 8x4
+*/
+AI = 11x11x2x8/((10x11+2x11+8)x4) = 3.46
+gflops = 33.0729
+
+
+
+改变循环顺序
+unroll1x12_p_for
+gflops =8.84659
+
+unroll4x12_p
+gflops = 26.5578
+
+unroll2x12_p_RB1x4
+36.0631
+
+unroll4x12_p_RB1x4 
+34.8344
+
+
+
+
+
+

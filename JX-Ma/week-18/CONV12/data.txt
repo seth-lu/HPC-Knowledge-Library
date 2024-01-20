@@ -1,0 +1,35 @@
+/**
+ * CONV12
+ * input(10,512,7,7)
+ * fiter(512,512,3,3)
+ * output(10,512,5,5)
+*/
+
+
+
+/**
+ * RB1x5_simd2
+ * flops:3x3x2x5
+ * input 2x3x3x4 fiter 3x3x4 output 2x4
+ * AI = 0.77
+ * gflops:10.344
+*/
+
+
+/**
+ * RB5x5_simd2
+ * flops:3x3x2x5x5
+ * input 2x3x7x4 fiter 3x3x4 output 2x5x4
+ * AI = 1.844
+ * gflops:24.3906
+*/
+
+
+/**
+ * RB5x5_simd2
+ * flops:3x3x2x5x5
+ * input 2x3x7x4 fiter 3x3x4 output 2x5x4
+ * AI = 1.844
+ * gflops:26.0499
+*/
+

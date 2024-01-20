@@ -1,0 +1,15 @@
+/**
+ * CONV10
+ * input(10,128,28,28)
+ * fiter(128,128,3,3)
+ * output(10,128,26,26)
+*/
+
+
+/*
+ * RB 2x28
+ * flops: 3x3x2x28x2
+ * input: 4x4x3x4 fiter:3x3x4 output 4x2x4
+ * AI = 3.87
+ * gflops:44.9739
+*/

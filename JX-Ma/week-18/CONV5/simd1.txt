@@ -1,0 +1,47 @@
+/**
+ * CONV5-optimizatin
+ * input(10,96,24,24)
+ * fiter(256,96,5,5)
+ * output(10,256,20,20)
+ * stride:1
+*/
+
+ unroll1x8_RB1x4
+ /*
+ * unroll1x8_RB1x4
+ * flop: 5x5x2x4
+ * input: 5x4x4 fiter 1x5x4 output4x4
+ * AI = 1.72
+ * gflops = 35.9332
+*/
+
+ 
+ unroll1x8_RB1x5
+ /**
+ * unroll1x8_RB1x5
+ * flop: 5x5x2x5
+ * input: 5x5x4 fiter 1x5x4 output5x4
+ * AI = 1.78
+ * gflops = 38.0172 
+*/
+
+
+ unroll1x8_RB1x10
+ /*
+ * unroll1x8_RB1x10
+ * flop: 5x5x2x10
+ * input: 5x10x4 fiter 1x5x4 output10x4
+ * AI = 1.92
+ * gflops = 43.1557
+*/	
+ 
+ unroll1x8_RB1x20
+ /**
+ * unroll1x8_RB1x20
+ * flop: 5x5x2x20
+ * input: 5x20x4 fiter 1x5x4 output20x4
+ * AI = 2
+ * gflops = 32.8262 
+*/
+ 
+ 

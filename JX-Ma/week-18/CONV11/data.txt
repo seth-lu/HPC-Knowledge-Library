@@ -1,0 +1,38 @@
+/**
+ * CONV11
+ * input(10,256,14,14)
+ * fiter(256,256,3,3)
+ * output(10,256,12,12)
+*/
+
+/**
+ * RB3x12_simd2
+ * flops:3x3x2x12x3
+ * input 2x3x5x4 fiter 3x3x4 output 2x3x4
+ * AI = 3.6
+ * gflops:40.3523
+*/
+
+/**
+ * RB4x12_simd2
+ * flops:3x3x2x12x4
+ * input 2x3x6x4 fiter 3x3x4 output 2x4x4
+ * AI = 4.07
+ * gflops:45.432
+*/
+
+/**
+ * RB6x12_simd2
+ * flops:3x3x2x12x6
+ * input 2x3x8x4 fiter 3x3x4 output 2x6x4
+ * AI = 4.69
+ * gflops:50.3206 --> best glops
+*/
+
+/**
+ * RB12x12_simd2
+ * flops:3x3x2x12x12
+ * input 2x3x14x4 fiter 3x3x4 output 2x12x4
+ * AI = 5.07
+ * gflops:41.509
+*/
