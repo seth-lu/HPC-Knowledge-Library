@@ -1,0 +1,31 @@
+/**
+ * CONV4-optimizatin
+ * input(10,64,224,224)
+ * fiter(64,64,7,7)
+ * output(10,64,109,109)
+ * stride:2
+*/
+
+unroll1x8_p_RB1x2
+/**
+ * AI flop/bytes = 2.13
+ * flop: 7x7x2x2
+ * bytes: input:2x7x4 fiter:1x7x4 output:2x4
+ * gflops: 24.1689
+*/
+
+unroll1x8_p_RB1x5
+/**
+ * AI flop/bytes = 2.26
+ * flop: 7x7x2x5
+ * bytes: input:6x7x4 fiter:1x7x4 output:5x4
+ * gflops: 33.7065 -->best gflops
+*/
+
+unroll1x8_p_RB1x7
+/**
+ * AI flop/bytes = 2.45
+ * flop: 7x7x2x7
+ * bytes: input:8x7x4 fiter:1x7x4 output:7x4
+ * gflops: 32.9018 
+*/

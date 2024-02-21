@@ -1,0 +1,48 @@
+  input(10,3,231,231)
+  fiter(96,3,11,11)
+  output(10,96,56,56)
+  stride :4
+  
+  
+  unroll1x4_p
+  /**
+ * AI flop/bytes = 0.900
+ * flop: 11x11x2
+ * bytes: input 3x11x4 fiter 3x11x4 output 1x4
+ * gflops: 13.3598
+*/
+
+unroll1x12_p
+/**
+ * AI flop/bytes = 1.34
+ * flop: 11x11x2
+ * bytes: input 2x11x4 fiter 2x11x4 output 1x4
+ * gflops:25.6086
+*/
+unroll1x12_p_RB1x2
+/**
+ * AI flop/bytes = 1.72
+ * flop: 11x11x2x2
+ * bytes: input 4x11x4 fiter 2x11x4 output 2x4
+ * gflops:36.1995 
+*/
+
+
+unroll1x12_p_RB1x4
+/**
+ * AI flop/bytes = 2.63
+ * flop: 11x11x2x4
+ * bytes: input 6x11x4 fiter 2x11x4 output 4x4
+ * gflops:42.0359 -->best gflops
+*/
+
+unroll1x12_p_RB1x7
+/**
+ * AI flop/bytes = 3.30
+ * flop: 11x11x2x7
+ * bytes: input 9x11x4 fiter 2x11x4 output 7x4
+ * gflops:40.9329 
+*/
+
+
+

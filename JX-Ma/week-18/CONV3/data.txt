@@ -1,0 +1,57 @@
+/**
+ * CONV3-optimizatin
+ * input(10,3,227,227)
+ * fiter(64,3,7,7)
+ * output(10,64,111,111)
+ * stride:2
+*/
+
+unroll1x4_p
+/**
+ * AI flop/bytes = 0.845
+ * flop: 7x7x2
+ * bytes: input:2x7x4 fiter:2x7x4 output:1x4
+ * gflops: 13.6936
+*/
+
+unroll1x8_p
+/**
+ * AI flop/bytes = 1.63
+ * flop: 7x7x2
+ * bytes: input:1x7x4 fiter:1x7x4 output:1x4
+ * gflops: 18.608
+*/
+
+unroll1x8_p_RB1x2
+
+/**
+ * AI flop/bytes = 2.13
+ * flop: 7x7x2x2
+ * bytes: input:2x7x4 fiter:1x7x4 output:2x4
+ * gflops: 27.9901
+*/
+
+unroll1x8_p_RB1x4
+/**
+ * AI flop/bytes = 2.130
+ * flop: 7x7x2x4
+ * bytes: input:5x7x4 fiter:1x7x4 output:4x4
+ * gflops: 30.3654
+*/
+
+unroll1x8_p_RB1x7
+/**
+ * AI flop/bytes = 2.45
+ * flop: 7x7x2x7
+ * bytes: input:8x7x4 fiter:1x7x4 output:7x4
+ * gflops: 31.5668 -->best gflops
+*/
+
+unroll1x8_p_RB1x8 
+/**
+ * AI flop/bytes = 2.51
+ * flop: 7x7x2x8
+ * bytes: input:9x7x4 fiter:1x7x4 output:8x4
+ * gflops: 30.8169 
+*/
+

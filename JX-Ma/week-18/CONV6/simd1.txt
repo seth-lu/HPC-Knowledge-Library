@@ -1,0 +1,39 @@
+/**
+ * CONV6
+ * input(10,256,12,12) 
+ * fiter(512,256,3,3)
+ * output(10,512,10,10)
+ * stride:1
+*/
+
+/**
+ * unroll1x4_p_RB1x5
+ * flops:3x3x2x5
+ * input 5x3x4 fiter 1x3x4 output 4x4
+ * AI = 1.0227
+ * gflops:28.3198
+*/
+
+/**
+ * unroll1x4_p_RB1x10
+ * flops:3x3x2x10
+ * input 10x3x4 fiter 1x3x4 output 10x4
+ * AI = 1.04
+ * gflops:31.7692
+*/
+
+/**
+ * unroll3x4_p_RB1x10
+ * flops:3x3x2x10
+ * input 10x3x4 fiter 1x3x4 output 10x4
+ * AI = 1.04
+ * gflops:30.8008
+*/
+
+/**
+ * unroll3x4_p_RB2x10
+ * flops:3x3x2x10X2
+ * input 10x4x4 fiter 1x3x4 output 20x4
+ * AI = 1.42
+ * gflops:22.4571
+*/

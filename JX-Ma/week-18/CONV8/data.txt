@@ -1,0 +1,55 @@
+/**
+ * CONV8
+ * input(10,64,112,112)
+ * fiter(128,64,3,3)
+ * output(10,128,110,110)
+*/
+
+
+/*
+ * RB 1x32
+ * flops: 3x3x2x32
+ * input: 4x3x3x4 fiter:3x3x4 output 4x4
+ * AI = 2.93
+ * gflops:35.903
+*/
+
+/*
+ * RB 1x56
+ * flops: 3x3x2x56
+ * input: 7x3x3x4 fiter:3x3x4 output 7x4
+ * AI = 3.18
+ * gflops:,43.2389
+*/
+
+
+/*
+ * RB 1x112
+ * flops: 3x3x2x112
+ * input: 14x3x3x4 fiter:3x3x4 output 14x4
+ * AI = 3.38
+ * gflops:48.5425 --> best
+*/
+
+/*
+ * RB 2x112
+ * flops: 3x3x2x112x2
+ * input: 14x4x3x4 fiter:3x3x4 output 14x2x4
+ * AI = 4.92
+ * gflops:39.2641
+*/
+
+
+/**
+ * flops: 3x3xx2x5
+ * input:5x3x4 fiter 1x3x4 output 5x4
+ * AI = 0.97
+ * gflops:24.6783
+*/
+
+/**
+ * flops: 3x3xx2x10
+ * input:10x3x4 fiter 1x3x4 output 10x4
+ * AI = 1.04
+ * gflops:27.5523
+*/

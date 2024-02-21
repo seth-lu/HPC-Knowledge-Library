@@ -1,0 +1,63 @@
+/**
+ * CONV7
+ * input(10,3,224,224)
+ * fiter(64,3,3,3)
+ * output(10,64,222,222)
+ * stride: 1
+*/
+
+/**
+ * RB1x8
+ * 对输入张量padding补充2,输出padding补充2
+ *  flops: 3x3x2x8
+ * input 1x3x3x4 fiter 3x3x4 output 1x4
+ * AI = 1.89
+ * gflops:8.67192
+*/
+
+
+/**
+ * RB1x16
+ * flops: 3x3x2x16
+ * input: 2x3x3x4 fiter 3x3x4 output 2x4
+ * AI = 2.48
+ * gflops:10.1522
+*/
+
+/*
+ * RB 1x32
+ * flops: 3x3x2x32
+ * input: 4x3x3x4 fiter:3x3x4 output 4x4
+ * AI = 2.93
+ * gflops:10.253
+*/
+
+/*
+ * RB 1x56
+ * flops: 3x3x2x56
+ * input: 7x3x3x4 fiter:3x3x4 output 7x4
+ * AI = 3.18
+ * gflops:,10.5875
+*/
+
+/*
+ * RB 1x112
+ * flops: 3x3x2x112
+ * input: 14x3x3x4 fiter:3x3x4 output 14x4
+ * AI = 3.38
+ * gflops:10.3151
+*/
+
+/**
+ * flops: 3x3xx2x6
+ * input:6x3x4 fiter 1x3x4 output 6x4
+ * AI = 1
+ * gflops:17.1666
+*/
+
+/**
+ * flops: 3x3xx2x8
+ * input:8x3x4 fiter 1x3x4 output 8x4
+ * AI = 1.03
+ * gflops:10.4154
+*/
