@@ -1,0 +1,168 @@
+1.直接在登录节点运行lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    2
+Core(s) per socket:    12
+座：                 2
+NUMA 节点：         2
+厂商 ID：           GenuineIntel
+CPU 系列：          6
+型号：              106
+型号名称：        Intel(R) Xeon(R) Silver 4310 CPU @ 2.10GHz
+步进：              6
+CPU MHz：             800.000
+CPU max MHz:           2101.0000
+CPU min MHz:           800.0000
+BogoMIPS：            4200.00
+虚拟化：           VT-x
+L1d 缓存：          48K
+L1i 缓存：          32K
+L2 缓存：           1280K
+L3 缓存：           18432K
+NUMA 节点0 CPU：    0-11,24-35
+NUMA 节点1 CPU：    12-23,36-47
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq spec_ctrl intel_stibp flush_l1d arch_capabilities
+
+2.提交作业选择节点为compute
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                56
+On-line CPU(s) list:   0-55
+Thread(s) per core:    1
+Core(s) per socket:    28
+座：                 2
+NUMA 节点：         2
+厂商 ID：           GenuineIntel
+CPU 系列：          6
+型号：              106
+型号名称：        Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz
+步进：              6
+CPU MHz：             800.000
+CPU max MHz:           3100.0000
+CPU min MHz:           800.0000
+BogoMIPS：            4000.00
+虚拟化：           VT-x
+L1d 缓存：          48K
+L1i 缓存：          32K
+L2 缓存：           1280K
+L3 缓存：           43008K
+NUMA 节点0 CPU：    0-27
+NUMA 节点1 CPU：    28-55
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq spec_ctrl intel_stibp flush_l1d arch_capabilities
+
+
+3.提交作业选择节点为InspurT4
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                40
+On-line CPU(s) list:   0-39
+Thread(s) per core:    2
+Core(s) per socket:    10
+座：                 2
+NUMA 节点：         2
+厂商 ID：           GenuineIntel
+CPU 系列：          6
+型号：              85
+型号名称：        Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
+步进：              7
+CPU MHz：             999.902
+CPU max MHz:           2400.0000
+CPU min MHz:           1000.0000
+BogoMIPS：            4800.00
+虚拟化：           VT-x
+L1d 缓存：          32K
+L1i 缓存：          32K
+L2 缓存：           1024K
+L3 缓存：           14080K
+NUMA 节点0 CPU：    0-9,20-29
+NUMA 节点1 CPU：    10-19,30-39
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 intel_ppin intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req pku ospke avx512_vnni spec_ctrl intel_stibp flush_l1d arch_capabilities
+
+4.提交作业选择节点A40
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    1
+Core(s) per socket:    24
+座：                 2
+NUMA 节点：         2
+厂商 ID：           GenuineIntel
+CPU 系列：          6
+型号：              106
+型号名称：        Intel(R) Xeon(R) Gold 5318Y CPU @ 2.10GHz
+步进：              6
+CPU MHz：             900.000
+CPU max MHz:           2101.0000
+CPU min MHz:           800.0000
+BogoMIPS：            4200.00
+虚拟化：           VT-x
+L1d 缓存：          48K
+L1i 缓存：          32K
+L2 缓存：           1280K
+L3 缓存：           36864K
+NUMA 节点0 CPU：    0-23
+NUMA 节点1 CPU：    24-47
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq spec_ctrl intel_stibp flush_l1d arch_capabilities
+
+5.选择节点GTX3090
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                96
+On-line CPU(s) list:   0-95
+Thread(s) per core:    2
+Core(s) per socket:    24
+座：                 2
+NUMA 节点：         2
+厂商 ID：           GenuineIntel
+CPU 系列：          6
+型号：              106
+型号名称：        Intel(R) Xeon(R) Gold 5318Y CPU @ 2.10GHz
+步进：              6
+CPU MHz：             1700.000
+CPU max MHz:           2101.0000
+CPU min MHz:           800.0000
+BogoMIPS：            4200.00
+虚拟化：           VT-x
+L1d 缓存：          48K
+L1i 缓存：          32K
+L2 缓存：           1280K
+L3 缓存：           36864K
+NUMA 节点0 CPU：    0-23,48-71
+NUMA 节点1 CPU：    24-47,72-95
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq spec_ctrl intel_stibp flush_l1d arch_capabilities
+
+6.选择节点X620
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                64
+On-line CPU(s) list:   0-63
+Thread(s) per core:    2
+Core(s) per socket:    16
+座：                 2
+NUMA 节点：         2
+厂商 ID：           GenuineIntel
+CPU 系列：          6
+型号：              106
+型号名称：        Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+步进：              6
+CPU MHz：             800.000
+CPU max MHz:           2401.0000
+CPU min MHz:           800.0000
+BogoMIPS：            4800.00
+虚拟化：           VT-x
+L1d 缓存：          48K
+L1i 缓存：          32K
+L2 缓存：           1280K
+L3 缓存：           24576K
+NUMA 节点0 CPU：    0-15,32-47
+NUMA 节点1 CPU：    16-31,48-63
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq spec_ctrl intel_stibp flush_l1d arch_capabilities
