@@ -1,0 +1,105 @@
+GTX3090
+Wed Mar 20 19:12:59 2024
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 465.19.01    Driver Version: 465.19.01    CUDA Version: 11.3     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  On   | 00000000:A0:00.0 Off |                  N/A |
+| 30%   26C    P8    16W / 350W |      0MiB / 24268MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+A40
+Wed Mar 20 19:14:54 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 465.19.01    Driver Version: 465.19.01    CUDA Version: 11.3     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A40          On   | 00000000:4F:00.0 Off |                    0 |
+|  0%   24C    P8    21W / 300W |      0MiB / 45634MiB |      2%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+X260
+Wed Mar 20 19:14:18 2024       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 465.19.01    Driver Version: 465.19.01    CUDA Version: 11.3     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  On   | 00000000:4B:00.0 Off |                  N/A |
+| 30%   27C    P8    15W / 350W |      0MiB / 24268MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+在服务器上跑perf的结果图
+
+ Performance counter stats for './main bhwc 1':
+
+         6,816,923      cache-misses:u            #    2.354 % of all cache refs    
+       289,571,170      cache-references:u                                          
+   <not supported>      L1-dcache-loads:u                                           
+   <not supported>      L1-dcache-load-misses:u                                     
+   <not supported>      LLC-loads:u                                                 
+   <not supported>      LLC-load-misses:u                                           
+   <not supported>      L1-icache-loads:u                                           
+   <not supported>      L1-icache-load-misses:u                                     
+   <not supported>      dTLB-loads:u                                                
+   <not supported>      dTLB-load-misses:u                                          
+   <not supported>      iTLB-loads:u                                                
+   <not supported>      iTLB-load-misses:u                                          
+
+       0.383560644 seconds time elapsed
+
+在本机上跑的结果
+ Performance counter stats for './main memory 1 -o output1.datamemory 1':
+
+        46,138,116      cache-misses                     #    6.79% of all cache refs           (51.88%)
+       679,586,831      cache-references                                                        (50.63%)
+     5,149,878,221      L1-dcache-loads                                                         (50.96%)
+       302,669,887      L1-dcache-load-misses            #    5.88% of all L1-dcache accesses   (52.75%)
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+     1,125,478,284      L1-icache-loads                                                         (52.98%)
+         1,615,392      L1-icache-load-misses            #    0.14% of all L1-icache accesses   (53.22%)
+         9,061,856      dTLB-loads                                                              (52.80%)
+           709,146      dTLB-load-misses                 #    7.83% of all dTLB cache accesses  (51.29%)
+         3,505,006      iTLB-loads                                                              (48.90%)
+         5,589,733      iTLB-load-misses                 #  159.48% of all iTLB cache accesses  (54.56%)
+
+       0.452986097 seconds time elapsed
+
+       1.620238000 seconds user
+       1.184174000 seconds sys
