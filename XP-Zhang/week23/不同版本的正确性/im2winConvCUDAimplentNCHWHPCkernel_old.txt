@@ -1,0 +1,80 @@
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: 13.1019 xx0
+13.1019
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: 36.4924 xx0
+36.4924
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: 10.7411 xx0
+10.7411
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: -29.8152 xx0
+29.8152
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: -21.7148 xx0
+21.7148
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: -45.9263 xx0
+45.9263
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: 91.6408 xx0
+91.6408
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWHPCkernel_old 
+smem init error!
+222
+333
+误差:0: -124.204 xx0
+124.204
