@@ -1,0 +1,135 @@
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:0: -20.4485 xx-21.4934
+1.04487
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:3548: -44.2677 xx-45.5212
+1.25348
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:0.00390625
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:0.0443783
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:186624: 15.78 xx-2.41678
+18.1968
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:0.0534172
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:0.0710373
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWHPC_prefetchkernel  
+222
+333
+误差:0.105835
+
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:0: 25.331 xx27.0162
+1.68517
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:48757: 58.4873 xx57.1474
+1.33988
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:0.00337601
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:0.0429535
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:186628: 8.51203 xx1.9202
+6.59184
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:0.0556755
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:0.0760727
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWHPC_prefetchkernel 
+222
+333
+误差:0.0996752

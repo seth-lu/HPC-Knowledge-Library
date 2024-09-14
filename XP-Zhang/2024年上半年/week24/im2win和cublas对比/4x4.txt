@@ -1,0 +1,57 @@
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+222
+333
+误差:0: 9.59505 xx6.84781
+2.74725
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+222
+333
+误差:0.000640869
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+222
+333
+误差:0.000579834
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+222
+333
+误差:0.000190735
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+222
+333
+误差:0.000160217
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+222
+333
+误差:0.000274658
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+222
+333
+误差:0.000579834
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+222
+333
+误差:0.00109863

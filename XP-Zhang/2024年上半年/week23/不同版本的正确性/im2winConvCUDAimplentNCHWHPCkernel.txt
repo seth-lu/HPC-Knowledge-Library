@@ -1,0 +1,134 @@
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:2: -7.16039 xx-10.289
+3.12865
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:8168: -50.9252 xx-52.5019
+1.57666
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.00313997
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0439939
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:186628: -5.22518 xx7.11056
+12.3357
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.053051
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0758743
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0977745
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0: 11.2426 xx10.0278
+1.21479
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:8748: 7.26318 xx5.90973
+1.35346
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0042305
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0424633
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:186628: -21.3595 xx-3.71805
+17.6415
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0540791
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0733185
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWHPCkernel 
+222
+333
+误差:0.0980988
