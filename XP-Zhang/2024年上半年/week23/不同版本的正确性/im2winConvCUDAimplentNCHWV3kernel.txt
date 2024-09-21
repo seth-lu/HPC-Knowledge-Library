@@ -1,0 +1,213 @@
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:1: 1.29166 xx0.147596
+1.14406
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:7777: 10.6606 xx9.57852
+1.08212
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:0.00349808
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:0.0447931
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:186628: -32.2069 xx-14.3682
+17.8387
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:0.0541997
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:0.0757666
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:0.103638
+
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:1: 5.91686 xx7.33978
+1.42292
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:4: -20.2165 xx63.3976
+83.614
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:4: 18.0291 xx29.0613
+11.0322
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:5: -13.4862 xx20.1014
+33.5876
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:4: -7.19388 xx0.934606
+8.12848
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:4: -4.00418 xx1.3082
+5.31238
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:4: 85.2874 xx55.4539
+29.8335
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWV3kernel    
+222
+333
+误差:4: -86.3458 xx-32.3409
+54.0049
+
+test_conv2
+111
+before test_cublas
+dims_a:128 3 231 231
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:0: -3.69399 xx-2.54141
+1.15258
+test_conv5
+111
+before test_cublas
+dims_a:128 96 24 24
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:4: 50.0003 xx38.5932
+11.4072
+test_conv6
+111
+before test_cublas
+dims_a:128 256 12 12
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:4: 95.7351 xx20.0344
+75.7007
+test_conv8
+111
+before test_cublas
+dims_a:128 64 112 112
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:4: -3.55471 xx2.3688
+5.92351
+test_conv9
+111
+before test_cublas
+dims_a:128 64 56 56
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:4: 10.9809 xx35.0396
+24.0587
+test_conv10
+111
+before test_cublas
+dims_a:128 128 28 28
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:4: -6.9314 xx12.0235
+18.9549
+test_conv11
+111
+before test_cublas
+dims_a:128 256 14 14
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:4: -42.7246 xx13.3321
+56.0567
+test_conv12
+111
+before test_cublas
+dims_a:128 512 7 7
+im2winConvCUDAimplentNCHWV3kernel 
+222
+333
+误差:4: 30.6356 xx71.9503
+41.3147

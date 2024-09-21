@@ -1,0 +1,52 @@
+4 4的很奇怪，报错
+test_conv1
+111
+before test_cublas
+dims_a:128 3 227 227
+222
+terminate called after throwing an instance of 'c10::Error'
+  what():  CUDA error: invalid configuration argument
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Exception raised from c10_cuda_check_implementation at /public/home/hpc2316085405032/zip/pytorch/c10/cuda/CUDAException.cpp:44 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f4d48d612e7 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libc10.so)
+frame #1: c10::detail::torchCheckFail(char const*, char const*, unsigned int, std::string const&) + 0x64 (0x7f4d48d17ad7 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libc10.so)
+frame #2: c10::cuda::c10_cuda_check_implementation(int, char const*, char const*, int, bool) + 0x118 (0x7f4d441da3c8 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x2b0a6 (0x7f4d441b60a6 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x3082d (0x7f4d441bb82d in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libc10_cuda.so)
+frame #5: <unknown function> + 0x321de (0x7f4d441bd1de in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libc10_cuda.so)
+frame #6: <unknown function> + 0x32586 (0x7f4d441bd586 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libc10_cuda.so)
+frame #7: <unknown function> + 0x11932a1 (0x7f4d35b232a1 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #8: at::detail::empty_generic(c10::ArrayRef<long>, c10::Allocator*, c10::DispatchKeySet, c10::ScalarType, c10::optional<c10::MemoryFormat>) + 0x14 (0x7f4d35b1b5b4 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #9: at::detail::empty_cuda(c10::ArrayRef<long>, c10::ScalarType, c10::optional<c10::Device>, c10::optional<c10::MemoryFormat>) + 0x111 (0x7f4d2c7d20a1 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cuda.so)
+frame #10: at::detail::empty_cuda(c10::ArrayRef<long>, c10::optional<c10::ScalarType>, c10::optional<c10::Layout>, c10::optional<c10::Device>, c10::optional<bool>, c10::optional<c10::MemoryFormat>) + 0x31 (0x7f4d2c7d2371 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cuda.so)
+frame #11: at::detail::empty_cuda(c10::ArrayRef<long>, c10::TensorOptions const&) + 0x10f (0x7f4d2c7d24df in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cuda.so)
+frame #12: <unknown function> + 0xec5749 (0x7f4d2c7ff749 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cuda.so)
+frame #13: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x96 (0x7f4d2c800176 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cuda.so)
+frame #14: <unknown function> + 0x2c2ba9e (0x7f4d2e565a9e in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cuda.so)
+frame #15: <unknown function> + 0x2c48961 (0x7f4d2e582961 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cuda.so)
+frame #16: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2be (0x7f4d36b6136e in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #17: at::native::_convolution(at::Tensor const&, at::Tensor const&, c10::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x1207 (0x7f4d35efcf87 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x25901bd (0x7f4d36f201bd in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x25964fc (0x7f4d36f264fc in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #20: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, c10::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x347 (0x7f4d3668db67 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #21: at::native::convolution(at::Tensor const&, at::Tensor const&, c10::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b5 (0x7f4d35ef0965 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x258f2bc (0x7f4d36f1f2bc in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #23: <unknown function> + 0x2596368 (0x7f4d36f26368 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #24: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, c10::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f4d3664d51b in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #25: <unknown function> + 0x3b1c36c (0x7f4d384ac36c in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x3b1d299 (0x7f4d384ad299 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #27: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, c10::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d7 (0x7f4d3668c937 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #28: <unknown function> + 0x12e3b90 (0x7f4d35c73b90 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #29: at::native::conv2d_symint(at::Tensor const&, at::Tensor const&, c10::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x1ff (0x7f4d35ef436f in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #30: <unknown function> + 0x2786653 (0x7f4d37116653 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #31: <unknown function> + 0x27868ed (0x7f4d371168ed in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #32: at::_ops::conv2d::call(at::Tensor const&, at::Tensor const&, c10::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x271 (0x7f4d36c8e1a1 in /public/home/hpc2316085405032/zip/pytorch/libtorch-cudnn/lib/libtorch_cpu.so)
+frame #33: ./main() [0x412cdc]
+frame #34: ./main() [0x4096e1]
+frame #35: ./main() [0x409d1d]
+frame #36: ./main() [0x404cf2]
+frame #37: __libc_start_main + 0xf5 (0x7f4d2ab7c3d5 in /lib64/libc.so.6)
+frame #38: ./main() [0x40518f]
