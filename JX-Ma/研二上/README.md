@@ -1,0 +1,34 @@
+- week_1
+  -  Attempt to run the libtorch of cudnn, libtorch of cublas and im2win.
+  - paper title : Optimizing Data Layout for Training Deep Neural Networks
+
+- week_2
+  - Reproduce Lu's environment and run libtorch of cudnn, libtorch of cublas.
+  - paper: Matrix optimization on GPU
+- week_3
+  - Compare the errors between CUDNN and CUBLAS, Tools for measuring time using GPU.
+  - paper: Reformulating the direct convolution for high-performance deep learning inference on
+
+- week_4
+  - Searching for the Logic of CUDNN Calling Algorithm, but not effect.
+  - paper: efficient Learning of Kernel Sizes for Convolution Layers of CNNs
+
+- week_5
+  - Use debugging tools to find the logic of CUDNN calling algorithms. not effect
+  - paper: Optimization and acceleration of convolutional neural networks: A survey
+- week_6
+  - Implements the function that calls the algorithm in cudnn: CUDNnConvolutionFwdAlgoPerf_t.
+  - paper: study of cudnn API
+- week_7 
+  - Separate the im2win tensor transformation and convolution computation time, and measure their tflops separately
+  - paper: Deep Tensor convolution on multicores
+- week_8
+  - I conducted experiments to supplement HPEC and attempted to optimize the algorithm for im2win conversion.
+  - paper:  The Indirect Convolution Algorithm
+- week_9
+  - Tested the tflops of each CUDNN algorithm in different batches.
+  - paper: Fast Algorithms for Convolutional Neural Networks 
+- week_10
+  - Improved tflops graph and measured convolution time
+  - paper: The convolution process and calculation flow of Winograd
+
