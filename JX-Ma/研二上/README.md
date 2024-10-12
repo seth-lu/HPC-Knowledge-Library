@@ -32,3 +32,8 @@
   - Improved tflops graph and measured convolution time
   - paper: The convolution process and calculation flow of Winograd
 
+- week_11
+  - Measured the absolute time of the algorithm on the CPU
+  - paper: FFT Convolutions are Faster than Winograd on Modern CPUs, Here’s Why
+- week_12
+  - study of FFT convolution
