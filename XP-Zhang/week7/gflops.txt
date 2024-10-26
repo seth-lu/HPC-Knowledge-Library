@@ -1,0 +1,31 @@
+我写的im2col的gflops
+一次计算一个批次：
+批次大小128：
+conv1 279
+conv2 257
+conv3 404
+conv4 695
+conv5 388
+conv6 
+conv7 
+conv8 
+conv9 
+conv10 
+conv11
+conv12 
+
+一次计算所有批次：
+批次大小128：
+conv1 867.9
+conv2 871.7
+conv3 错误
+conv4 547
+conv5 3305
+conv6 
+conv7 
+conv8 
+conv9 
+conv10 
+conv11
+conv12 
+
