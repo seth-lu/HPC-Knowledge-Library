@@ -1,18 +1,15 @@
 - week_1
   -  Attempt to run the libtorch of cudnn, libtorch of cublas and im2win.
   - paper title : Optimizing Data Layout for Training Deep Neural Networks
-
 - week_2
   - Reproduce Lu's environment and run libtorch of cudnn, libtorch of cublas.
   - paper: Matrix optimization on GPU
 - week_3
   - Compare the errors between CUDNN and CUBLAS, Tools for measuring time using GPU.
   - paper: Reformulating the direct convolution for high-performance deep learning inference on
-
 - week_4
   - Searching for the Logic of CUDNN Calling Algorithm, but not effect.
   - paper: efficient Learning of Kernel Sizes for Convolution Layers of CNNs
-
 - week_5
   - Use debugging tools to find the logic of CUDNN calling algorithms. not effect
   - paper: Optimization and acceleration of convolutional neural networks: A survey
@@ -31,9 +28,18 @@
 - week_10
   - Improved tflops graph and measured convolution time
   - paper: The convolution process and calculation flow of Winograd
-
 - week_11
   - Measured the absolute time of the algorithm on the CPU
   - paper: FFT Convolutions are Faster than Winograd on Modern CPUs, Here’s Why
 - week_12
   - study of FFT convolution
+- week_13
+  - Introduced FFT flops 
+  - paper: Fast Training of Convolutional Networks through FFTs
+
+- week_14 
+  - summary winograd and FFT 
+  -  paper: AutoFFT: A Template-Based FFT Codes Auto-Generation Framework for ARM and X86
+- week_15
+  - draw picture
+  - paper: Optimizing batched winograd convolution on GPUs
