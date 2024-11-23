@@ -1,0 +1,44 @@
+这是将卢帅师兄写的核心用tensor1DV1管理内存的版本
+batch 128
+conv1  6300.79
+conv2  6320.95
+conv3  10946
+conv4  14003
+conv5  14403.5
+conv6  13935.9
+conv7  4349.03
+conv8  14114.9
+conv9  13691
+conv10 13771.3
+conv11 13201.7
+conv12  12839.7
+
+
+batch 256
+conv1 6420.72
+conv2 6442.49
+conv3 11225.5
+conv4 13110.4
+conv5 14761.7
+conv6 14332.7
+conv7 4411.51
+conv8 14324.8
+conv9 14051
+conv10 14400.8
+conv11 14174.2
+conv12 13802.1
+
+
+batch 512
+conv1 6367.32
+conv2  
+conv3  
+conv4 
+conv5 14595.7
+conv6 14176.3
+conv7 4411.51
+conv8 13238.3
+conv9 14002.7
+conv10 14374.4
+conv11 14457
+conv12 14124.9
