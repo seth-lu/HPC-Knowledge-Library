@@ -42,4 +42,4 @@
   -  paper: AutoFFT: A Template-Based FFT Codes Auto-Generation Framework for ARM and X86
 - week_15
   - draw picture
-  - paper: Optimizing batched winograd convolution on GPUs
+  - paper: Optimizing batched winograd convolution on GPUs ：
