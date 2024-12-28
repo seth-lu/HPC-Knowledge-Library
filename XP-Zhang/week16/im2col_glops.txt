@@ -1,0 +1,88 @@
+这是GPU上面的im2col加cubulas中的矩阵乘法实现卷积
+batch = 128
+一次计算一个batch
+并非在服务器，在自己电脑上跑的结果
+之前自己写的im2col变化
+conv1 369.033
+conv2 350.451
+conv3 230.278
+conv4 171.584
+conv5 366.808
+conv6 494.207
+conv7 173.874
+conv8 383.588
+conv9 231.321
+conv10 196.534
+conv11 324.861
+conv12 186.044
+
+
+使用libtorch中的im2col变化
+conv1 1711.57
+conv2 1771.56
+conv3 1533.57
+conv4 1895.41
+conv5 2173.82
+conv6 1938.44
+conv7 1171.13
+conv8 2609.52
+conv9 1929.66
+conv10 1765.23
+conv11 1747.71
+conv12 887.892
+
+使用libtorch中的im2col变化，一次计算所有批次
+conv1 428.021
+conv2 441.898
+conv3 186.645
+conv4
+conv5 2076.87
+conv6 3215.74
+conv7 32.8336
+conv8 
+conv9 1499.01
+conv10 1569.48
+conv11 2367.77
+conv12 3037.52
+
+使用libtorch中的im2col变化(核函数多搬运batch次)，一次计算所有批次
+conv1 424.239
+conv2 452.49
+conv3 181.384
+conv4
+conv5 1993.74
+conv6 3197.35
+conv7 32.7164
+conv8 
+conv9 638.133
+conv10 1371.06
+conv11 2174.11
+conv12 2535.17
+
+只有矩阵乘法的速度
+一次计算所有批次
+conv1 4033.83
+conv2 3714.36
+conv3 4945.75
+conv9 4988.01
+conv10 5463.1
+
+一次计算一个批次
+conv1 2990.5
+conv2 2623.7
+conv3 2629.32
+conv9 2982.1
+conv10 2367.83
+
+服务器上
+一次计算一个批次
+conv1 3671.1
+conv2 3772.46
+conv11 3636.61
+conv12 2070.13
+
+一次计算所有批次
+conv1 2291.25
+conv2 2442.73
+conv11 12291.3
+conv12 13374.2
