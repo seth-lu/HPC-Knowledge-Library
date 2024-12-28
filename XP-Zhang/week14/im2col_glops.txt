@@ -1,0 +1,32 @@
+这是GPU上面的im2col加cubulas中的矩阵乘法实现卷积
+batch = 128
+一次计算一个batch
+并非在服务器，在自己电脑上跑的结果
+之前自己写的im2col变化
+conv1 369.033
+conv2 350.451
+conv3 230.278
+conv4 171.584
+conv5 366.808
+conv6 494.207
+conv7 173.874
+conv8 383.588
+conv9 231.321
+conv10 196.534
+conv11 324.861
+conv12 186.044
+
+
+使用libtorch中的im2col变化
+conv1 1711.57
+conv2 1771.56
+conv3 1533.57
+conv4 1895.41
+conv5 2173.82
+conv6 1938.44
+conv7 1171.13
+conv8 2609.52
+conv9 1929.66
+conv10 1765.23
+conv11 1747.71
+conv12 887.892
